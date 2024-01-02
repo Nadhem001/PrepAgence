@@ -21,4 +21,8 @@ class Property extends Model
         'postal_code',
         'sold'
     ];
+
+    public function options(){
+        return $this->belongsToMany(Option::class);
+    }
 }
